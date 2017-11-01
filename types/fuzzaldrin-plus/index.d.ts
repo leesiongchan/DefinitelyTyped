@@ -27,3 +27,4 @@ export function filter<T>(data: T[], query: string, options?: IFilterOptions): T
 export function score(str: string, query: string, preparedQuery?: PreparedQuery, options?: IScoringOptions): number;
 export function match(str: string, query: string, preparedQuery?: PreparedQuery, options?: IScoringOptions): number[];
 export function prepQuery(query: string, options?: IQueryOptions): PreparedQuery;
+export function wrap(str: string, query: string, options?: IFilterOptions): string;
